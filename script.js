@@ -6,8 +6,8 @@ function rollDice() {
     result.textContent = "Rolling the dice...";
     
     let rollCount = 0;
-    const maxRolls = 10; // Number of times the dice image will change before stopping
-    const rollInterval = 50; // Interval between image changes in milliseconds, faster rotation
+    const maxRolls = 10; 
+    const rollInterval = 50;
 
     dice.style.transform = "rotate(360deg)";
     
@@ -21,7 +21,7 @@ function rollDice() {
             const finalNumber = randomIndex + 1;
             setTimeout(() => {
                 result.textContent = `You rolled a ${finalNumber}`;
-            }, 300); // Delay showing the result text
+            }, 300);
             dice.style.transform = "rotate(0deg)";
         }
     }, rollInterval);
